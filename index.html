@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Advent Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1>🎄 <span class="gradient-text">Advent Calendar 2025</span> 🎄</h1>
+            <p id="current-date"></p>
+        </header>
+
+        <div id="calendar-grid" class="grid-container">
+            </div>
+
+        <div class="footer-actions">
+            <button onclick="resetCalendar()" id="reset-btn">🔄 Takvimi Sıfırla</button>
+        </div>
+
+        <footer class="signature">
+            <p>Designed & Developed by <a href="https://github.com/eminkome" target="_blank" class="my-name">Emin Köme</a></p>
+            <p class="copyright">© 2025 All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <div id="modal-overlay" class="overlay hidden">
+        <div class="modal-content">
+            <button id="close-btn" class="close-btn">X</button>
+            <div id="css-anim-wrapper"></div>
+            <h2 id="modal-title">Başlık</h2>
+            <p id="modal-desc">İçerik yükleniyor...</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
