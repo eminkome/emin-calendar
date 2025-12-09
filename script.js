@@ -83,7 +83,7 @@ async function openModal(dayNum, alreadyOpened) {
     
     document.getElementById('modal-title').innerText = `${dayNum} Aralık`;
     const descArea = document.getElementById('modal-desc');
-    descArea.innerText = "Lavix düşünüyor...";
+    descArea.innerText = "Hediye oluşturuluyor...";
     
     animWrapper.innerHTML = '';
     animWrapper.className = ''; 
@@ -138,5 +138,6 @@ function resetCalendar() {
         location.reload();
     }
 }
+
 
 initCalendar();
